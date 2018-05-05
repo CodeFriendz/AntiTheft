@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Anti-Theft</string>
+    <string name="userOrPassEmp">Username or Password is empty</string>
+</resources>

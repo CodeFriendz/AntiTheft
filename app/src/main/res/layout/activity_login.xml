@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="18dp"
+              android:background="@drawable/login_page_image">
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/edit_text_style_normal"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:hint="Username"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:textColorHint="#DCDCDC" />
+
+    <EditText android:id="@+id/etPassword"
+              android:background="@drawable/edit_text_style_normal"
+              android:drawableLeft="@drawable/ic_lock_white_24dp"
+              android:textColorHint="#DCDCDC"
+              android:textColor="#fff"
+              android:layout_width="300dp"
+              android:layout_height="60dp"
+              android:layout_gravity="center"
+              android:hint="Password"
+              android:maxLines="1"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:inputType="textPassword"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#fff"
+        android:text="Remember Me"
+        android:textColor="#fff"
+        android:textColorHighlight="#fff"
+        android:textColorHint="#fff"
+        android:textColorLink="#fff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword" />
+
+    <Button
+        android:id="@+id/btLogin"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button_style_selector"
+        android:text="Login"
+        android:textColor="#fff"
+        android:visibility="visible"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginTop="16dp"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_alignEnd="@+id/etPassword" />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="Forgot Password?"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Register New Account"
+        android:textColor="#fff"
+        android:onClick="NavigateRegistrationPage"/>
+
+
+</RelativeLayout>
