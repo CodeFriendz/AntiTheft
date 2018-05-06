@@ -81,6 +81,7 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
              Utils.ShowTostMessage(this,"Login Successfull");
              Intent intent=new Intent(this,RegistrationActivity.class);
              startActivity(intent);
+
          }
     }
 }
